@@ -1,0 +1,319 @@
+/*Selecciones generales*/
+*{
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style-type: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*Headder*/
+
+header{
+    width: 100%;
+}
+h1{
+    color: white;
+    font-size: 45px;
+    margin-left: 35px;
+    font-weight: 500;
+}
+h1 span{
+    color: #ED2461;
+}
+.logo{
+    border-radius: 50%;
+    width: 60px;
+    margin: 5px;
+}
+.navBarHeader {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    align-content: center;
+    background-color:#1EB6AF;
+}
+.textoMargenHeader{
+    text-align: center;
+    margin-left: 50%;
+    font-size: 18px;
+}
+
+
+/*Main Home*/
+
+main{
+    background-color: #D8E2DC;
+}
+.fotoHome{
+    width: 52%;
+    mix-blend-mode: darken;
+}
+#Home{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.textoHome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textoHome h3{
+    margin: -10% 0 10% 0;
+    text-align: center;
+    width: 350px;
+    font-size: 48px;
+    font-weight: 500;
+    -webkit-text-stroke: 1px #ED2461;
+    color: black; 
+}
+.textoHome h2{
+    width: 300px;
+    text-align: center;
+    font-size: 48px;
+    background-color:#ED2461;
+    border: solid 5px #1EB6AF;
+}
+.textoHome a{
+    color: white;
+    letter-spacing: 8px;
+}
+
+/*Main FAQ*/
+#FAQ{
+    width: 80%;
+    margin: 3% 0% 3% 8%;
+}
+#FAQ h2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+#FAQ p{
+    text-align: justify;
+    font-size: 22px;
+    margin-bottom: 2%;
+}
+#FAQ span{
+    font-weight: 700;
+    color: #ED2461;
+}
+#FAQ .tituloColorFAQ{
+    font-weight: 500;
+}
+#FAQ i{
+    color: #1EB6AF;
+}
+
+/*Main Formulario*/
+#Formulario{
+    text-align: center;
+}
+#Formulario h2{
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 48px;
+    color: #ED2461
+}
+#Formulario p{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/*Especial boton subida*/
+.botonSubida{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    z-index: 999;
+    font-size: 35px;
+    transform: rotate(-90deg);
+    border-radius: 50%;
+}
+.botonSubida a{
+    color: #ED2461;
+}
+
+/*Footer*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    align-content: center;
+    background-color:#1EB6AF;
+}
+.logoFantasma{
+    width: 100px;
+    margin-left: 60%;
+    opacity: 75%;
+}
+.navBarFooter{
+    margin-left: 30px;
+    font-size: 18px;
+}
+.navBarFooter i{
+    margin-right: 5px;
+    color: #ED2461;
+}
+.copyrigth{
+    text-align: center;
+    margin-right: 110px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/*Display de formulario correcto*/
+#formPequeño{
+    display: none;
+}
+
+/*Media Queries*/
+@media (max-width: 1000px) {
+    /*header*/
+    .header {
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .textoMargenHeader{
+        text-align: center;
+        font-size: 14px;
+        margin: 10px;
+    }
+    .logo{
+        border-radius: 50%;
+        width: 40px;
+    }
+    /*Main Home*/
+    #Home{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .fotoHome{
+        width: 52%;
+        margin: 0% 10% 0% 10%;
+    }
+    .textoHome h3{
+        margin: 0% 0 10% 0;
+        width: 200px;
+        font-size: 36px;
+    }
+    .textoHome h2{
+        width: 200px;
+        text-align: center;
+        font-size: 36px;
+    }
+    .textoHome a{
+        letter-spacing: 6px;
+    }
+    /*Main FAQ*/
+    #FAQ h2{
+    font-size: 36px;
+    }
+    #FAQ p{
+    text-align: justify;
+    font-size: 16px;
+    margin-bottom: 2%;
+    }   
+     /*Main Formulario*/
+    #Formulario h2{
+    margin-top: 40px;
+    font-size: 36px;
+    }
+    #Formulario p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    }
+    /*Especial Boton subida*/
+    .botonSubida a{
+        font-size: 24px;
+    }
+    /*Footer*/
+    footer{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:space-between;
+    }
+    .logoFantasma{
+        width: 50px;
+        margin-left: 20px;
+        opacity: 75%;
+    }
+    .navBarFooter{
+        margin-left: 10%px;
+        font-size: 16px;
+    }
+    .copyrigth{
+        text-align: center;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+    /*Display de formulario*/
+    #formNormal{
+        display: none;
+    }
+    #formPequeño{
+        display:contents;
+    }
+}
+/*Animaciones*/
+.botonUnirse :hover{
+    background-color: #ED2461;
+    color: white;
+    text-align: center;
+    animation: botonHome 2500ms linear 50ms infinite alternate ;
+}
+@keyframes botonHome {
+    50% {
+        background-color: whitesmoke;
+        color:#ED2461;
+    }
+}
+.botonSubida a :hover{
+    color: pink;
+}
+
+/*Configuracion de sweet alert*/
+.swal-overlay {
+    background-color: #1EB6AF;
+}
+.swal-modal{
+    background-color: #D8E2DC;
+}
+.swal-title{
+    font-size: 36px;
+    color: black;
+}
+.swal-text{
+    font-size: 22px;
+    text-align: center;
+    color: black;
+}
+.swal-button{
+    background-color: #ED2461;
+    color: white;
+}

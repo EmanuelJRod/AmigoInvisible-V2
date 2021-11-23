@@ -1,0 +1,186 @@
+/*Selecciones generales*/
+*{
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style-type: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*Headder*/
+
+header{
+    width: 100%;
+}
+h1{
+    color: white;
+    font-size: 45px;
+    margin-left: 35px;
+    font-weight: 500;
+}
+h1 span{
+    color: #ED2461;
+}
+.logo{
+    border-radius: 50%;
+    width: 60px;
+    margin: 5px;
+}
+.navBarHeader {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    align-content: center;
+    background-color:#1EB6AF;
+}
+.textoMargenHeader{
+    text-align: center;
+    margin-left: 50%;
+    font-size: 18px;
+}
+
+/*Main*/
+main{
+    background-color: #D8E2DC;
+}
+main h2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    color: #ED2461;
+}
+main p{
+    text-align: center;
+    font-size: 22px;
+}
+main a{
+    color: #ED2461;
+    font-size: 22px;
+    display:block;
+}
+.contactos p{
+    color: #ED2461;
+    font-size: 22px;
+    display:block;
+}
+.contactos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tarjeta{
+    text-align: center;
+    border: solid 3px #1EB6AF;
+    border-radius: 5%;
+    background-color: #1EB6AF;
+    margin: 10px;
+}
+.tarjeta img{
+    width: 500px;
+    height: 280px;
+
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    align-content: center;
+    background-color:#1EB6AF;
+}
+.logoFantasma{
+    width: 100px;
+    margin-left: 60%;
+    opacity: 75%;
+}
+.navBarFooter{
+    margin-left: 30px;
+    font-size: 18px;
+}
+.navBarFooter i{
+    margin-right: 5px;
+    color: #ED2461;
+}
+.copyrigth{
+    text-align: center;
+    margin-right: 110px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+    /*header*/
+    .header {
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .textoMargenHeader{
+        text-align: center;
+        font-size: 14px;
+        margin: 10px;
+    }
+    .logo{
+        border-radius: 50%;
+        width: 40px;
+    }
+
+    /*Main*/
+    main h2{
+        font-size: 36px;
+    }
+    main p{
+        text-align: center;
+        font-size: 16px;
+    }
+    main a{
+        font-size: 16px;
+    }
+    .contactos p{
+        font-size: 16px;
+    }
+    .tarjeta img{
+        width: 350px;
+        height: 196px;
+
+    }
+
+    /*Footer*/
+    footer{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:space-between;
+    }
+    .logoFantasma{
+        width: 50px;
+        margin-left: 20px;
+        opacity: 75%;
+    }
+    .navBarFooter{
+        margin-left: 10%px;
+        font-size: 16px;
+    }
+    .copyrigth{
+        text-align: center;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+}
