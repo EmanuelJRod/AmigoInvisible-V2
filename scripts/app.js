@@ -5,8 +5,8 @@ window.addEventListener("load", function () {
     btnUnirse.addEventListener("click", function () {
         console.log("Se presiono le boton unirse");
         swal({
-            title:"¡GRACIAS POR SUMARTE!",
-            text:"Para completar tu inscripción completá el formulario."
+            title: "¡GRACIAS POR SUMARTE!",
+            text: "Para completar tu inscripción completá el formulario."
         });
     })
 })

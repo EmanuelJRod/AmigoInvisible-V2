@@ -1,123 +1,142 @@
 /*Selecciones generales*/
-*{
+* {
     margin: 0px;
     border: 0px;
     box-sizing: border-box;
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
-li{
+
+li {
     list-style-type: none;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
 /*Headder*/
 
-header{
+header {
     width: 100%;
 }
-h1{
+
+h1 {
     color: white;
     font-size: 45px;
     margin-left: 35px;
     font-weight: 500;
 }
-h1 span{
+
+h1 span {
     color: #ED2461;
 }
-.logo{
+
+.logo {
     border-radius: 50%;
     width: 60px;
     margin: 5px;
 }
+
 .navBarHeader {
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
 
 .header {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     align-content: center;
-    background-color:#1EB6AF;
+    background-color: #1EB6AF;
 }
-.textoMargenHeader{
+
+.textoMargenHeader {
     text-align: center;
     margin-left: 50%;
     font-size: 18px;
 }
 
 /*Main*/
-main{
+main {
     background-color: #D8E2DC;
 }
-main h2{
+
+main h2 {
     text-align: center;
     font-size: 48px;
     font-weight: 500;
     color: #ED2461;
 }
-main p{
+
+main p {
     text-align: center;
     font-size: 22px;
 }
-main a{
+
+main a {
     color: #ED2461;
     font-size: 22px;
-    display:block;
+    display: block;
 }
-.contactos p{
+
+.contactos p {
     color: #ED2461;
     font-size: 22px;
-    display:block;
+    display: block;
 }
-.contactos{
+
+.contactos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.tarjeta{
+
+.tarjeta {
     text-align: center;
     border: solid 3px #1EB6AF;
     border-radius: 5%;
     background-color: #1EB6AF;
     margin: 10px;
 }
-.tarjeta img{
+
+.tarjeta img {
     width: 500px;
     height: 280px;
 
 }
 
 /*Footer*/
-footer{
+footer {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     align-content: center;
-    background-color:#1EB6AF;
+    background-color: #1EB6AF;
 }
-.logoFantasma{
+
+.logoFantasma {
     width: 100px;
     margin-left: 60%;
     opacity: 75%;
 }
-.navBarFooter{
+
+.navBarFooter {
     margin-left: 30px;
     font-size: 18px;
 }
-.navBarFooter i{
+
+.navBarFooter i {
     margin-right: 5px;
     color: #ED2461;
 }
-.copyrigth{
+
+.copyrigth {
     text-align: center;
     margin-right: 110px;
     font-size: 18px;
@@ -125,60 +144,71 @@ footer{
 }
 
 @media (max-width: 1000px) {
+
     /*header*/
     .header {
         flex-wrap: wrap;
-        justify-content:space-around;
+        justify-content: space-around;
     }
-    h1{
+
+    h1 {
         font-size: 24px;
     }
-    .textoMargenHeader{
+
+    .textoMargenHeader {
         text-align: center;
         font-size: 14px;
         margin: 10px;
     }
-    .logo{
+
+    .logo {
         border-radius: 50%;
         width: 40px;
     }
 
     /*Main*/
-    main h2{
+    main h2 {
         font-size: 36px;
     }
-    main p{
+
+    main p {
         text-align: center;
         font-size: 16px;
     }
-    main a{
+
+    main a {
         font-size: 16px;
     }
-    .contactos p{
+
+    .contactos p {
         font-size: 16px;
     }
-    .tarjeta img{
+
+    .tarjeta img {
         width: 350px;
         height: 196px;
 
     }
 
     /*Footer*/
-    footer{
+    footer {
         flex-wrap: wrap;
         align-items: center;
-        justify-content:space-between;
+        justify-content: space-between;
     }
-    .logoFantasma{
+
+    .logoFantasma {
         width: 50px;
         margin-left: 20px;
         opacity: 75%;
     }
-    .navBarFooter{
+
+    .navBarFooter {
         margin-left: 10%px;
         font-size: 16px;
     }
-    .copyrigth{
+
+    .copyrigth {
         text-align: center;
         margin-right: 10px;
         font-size: 16px;
